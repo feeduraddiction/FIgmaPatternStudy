@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans+Condensed:wght@700&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+
+    margin:0;
+}
+.initial-page
+{
+    background: url("bgc.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+/* background-image: url("bgc.png");
+position: absolute;*/
+height: 800px;
+width: 1920px; 
+
+
+margin: 0;
+}
+
+
+    
+/* HEADER STYLE STYLE */
+.header{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+   padding: 0 160px;
+    border-bottom: 1px solid #fff;
+}
+.language{
+    
+    color: #fff;
+    height: 50px;
+    width:85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+.text-head{
+   justify-self: center;
+   align-self: center;
+    
+    display: flex;
+    color: #fff;
+    font-size: 8px;
+    width: 586px;
+    align-content: center;
+    justify-content: space-between;
+    
+    /* margin-left: 400px; */
+    
+}
+.text-head p{
+
+font-family: 'Montserrat', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+.logo{
+    /* margin-left: 180px; */
+    
+    display: flex;
+    justify-self: start;
+    
+    
+    
+    
+}
+.search {
+   
+    position: relative;
+    height: 50px;
+}
+.search-main{
+
+
+    font-family:'Roboto', sans-serif;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.search {
+    position: relative;
+    height: 50px;
+  
+    
+}
+
+input:placeholder-shown {
+    color:white;
+}
+
+.search .input {
+    background-color: transparent;
+    border: 0;
+    font-size: 18px;
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+    transition: width 0.3s ease;
+
+}
+.fas{
+    color: #fff;
+}
+.btn {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    transition: transform 0.3s ease;
+
+}
+::placeholder
+{
+    color: transparent;
+}
+
+.btn:focus, input:focus {
+    outline: none;
+}
+
+.search.active .input{
+    width: 200px;
+    border-bottom: 1px solid #fff;
+
+}
+.search.active .input::placeholder
+{
+    color: #fff;
+}
+
+.search.active .btn{
+    transform-origin: left;
+    transform: translateX(198px);
+}
+.search.active .language{
+    transform-origin: left;
+    transform: translateX(198px);
+}
+
+
+.search-language{
+
+    
+    /* margin-left: 150px; */
+    width: 375px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: flex-end;
+   
+}
+/* HEADER STYLE END */
+.grid{
+    position: absolute;
+    top: 394px;
+    left: 975px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    /* border: 5px solid blue; */
+    width: 540px;
+    height:356px;
+}
+.calendar{
+    background-color:#2378FC;
+    width: 255px;
+    height: 148px;
+}
+.toget{
+    width: 255px;
+    height: 148px;
+    background-color:#30BCC9;
+}
+.onlineform{
+    width: 255px;
+    height: 175px;
+    background-color:#FFC41E;
+    
+}
+.plan{
+    width: 255px;
+    height: 175px;
+    background-color:#F6404F;
+}
+
+
+
+.container-main{
+    /* border: 5px solid green; */
+    display: flex;
+    height: 710px;
+}
+.expoforum{
+    color: #fff;
+    display: flex;
+    position: absolute;
+    top: 274px;
+    left: 405px;
+    /* border: 5px solid brown; */
+    margin:0;
+    height: 224px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about-complex p{
+
+    /* border: 5px solid green; */
+    display: flex;
+    flex-direction: row;
+    text-align: end;
+    height: 22px;
+    margin:0;
+   
+    
+    
+}
+.expoforum h1 {
+    margin:0;
+display: flex;
+/* border: 5px solid green; */
+font-family: 'Open Sans Condensed', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 64px;
+line-height: 160%;
+
+letter-spacing: 6px;
+/* or 102px */
+height: 74px;
+width: 420px ;
+text-transform: uppercase;
+
+
+
+}
+.expoforum p {
+font-family: 'Montserrat', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px;
+
+
+}
+.grid h3{
+color: white;
+font-family:'Open Sans Condensed', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 120%;
+/* or 27px */
+
+letter-spacing: -0.01em;
+}
+.grid p{
+    font-family:'Montserrat', sans-serif; ;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 135%;
+    color: white;
+    
+}
+.toget, .calendar, .onlineform, .plan{
+    display: flex;
+    padding: 30px 0px 0px 40px;
+    flex-direction: column;
+    align-content: flex-start;
+    transition: 0.5s ease;
+    
+}
+
+
+
+
+/* ANIMATION */
+
+
+
+.toget{
+    transition: 0.5s ease; 
+}
+.toget:hover{
+    transform: scale(1.1);
+}
+.calendar{
+    transition: 0.5s ease; 
+}
+.calendar:hover{
+    transform: scale(1.1);
+}
+.onlineform{
+    transition: 0.5s ease; 
+}
+.onlineform:hover{
+    transform: scale(1.1);
+}
+.plan{
+    transition: 0.5s ease; 
+}
+.plan:hover{
+    transform: scale(1.1);
+}
+
+
+/* ANIMATION END */
+
+
+
+
+
+
+
+.calendar h3{
+    
+    width: 175px;
+    height: 54px;
+    margin: 0px;
+
+}
+.toget h3{
+    
+    width: 175px;
+    height: 54px;
+    margin: 0px;
+
+}
+
+.onlineform h3{
+    width: 154px;
+    height: 81px;
+    margin: 0px;
+}
+.plan h3{
+    width: 175px;
+    height: 81px;
+    margin: 0px;
+}
+
+
+/* END OF FIRST PAGE */
+
+
+
+.blue-page{
+    padding: 75px 403px 0px 403px;
+    position: absolute;
+    width:1920px;
+    height: 426px;
+    top: 800px;
+    display: flex;
+    height:426;
+    background-color: #2378FC;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.blue-page ul {
+    padding: 0;
+    margin:30px 0;
+    list-style-type: none;
+    font-family:'Montserrat', sans-serif; ;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+    
+}
+.visitors, .exponents, .press, .organizators{
+    margin:0;
+    align-items: flex-start;
+
+}
+
+.blue-page h2{
+color: white;
+font-family:'Open Sans Condensed', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+margin:0;
+
+}
+.visitors{
+    width: 188px;
+}
+ul.list>li{
+    margin: 15px 0px;
+}
